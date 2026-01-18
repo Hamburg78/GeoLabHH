@@ -1188,5 +1188,11 @@ document.addEventListener('translate', (e) => {
         );
     });
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('notify-btn');
+    if (btn) {
+        btn.addEventListener('click', enableNotifications);
+    }
+});
 
 init()
